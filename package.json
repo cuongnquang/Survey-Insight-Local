@@ -1,0 +1,34 @@
+{
+  "name": "survey-insight-local",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Survey Insight Local - offline survey analytics dashboard (Excel, CSV, Google Sheets)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "chart.js": "4.5.1",
+    "jspdf": "4.2.1",
+    "papaparse": "5.7.0",
+    "xlsx": "0.18.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.1",
+    "eslint": "9.39.1",
+    "fake-indexeddb": "^6.2.5",
+    "globals": "15.15.0",
+    "jsdom": "^25.0.1",
+    "vite": "6.3.5",
+    "vitest": "2.1.9"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true,
+    "esbuild@0.21.5": true
+  }
+}

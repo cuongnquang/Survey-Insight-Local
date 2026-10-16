@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Insight Local</title>
+    <meta
+      name="description"
+      content="Phân tích khảo sát cục bộ từ Excel, CSV và Google Sheets. Dữ liệu ở lại trên máy của bạn."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%234F46E5'/%3E%3Cpath d='M8 22V12M14 22V8M20 22v-6M26 22V14' stroke='%23FBFCFD' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div id="boot" class="boot">
+      <div class="boot__mark">Survey&nbsp;Insight&nbsp;Local</div>
+      <p class="boot__hint">Đang khởi động…</p>
+    </div>
+
+    <div id="app" class="app" hidden>
+      <aside class="rail">
+        <div class="rail__brand">
+          <span class="rail__logo" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="28" height="28">
+              <rect width="32" height="32" rx="6" fill="var(--primary)" />
+              <path d="M8 22V12M14 22V8M20 22v-6M26 22V14" stroke="#FBFCFD" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+          </span>
+          <span class="rail__brand-text">
+            <strong>Survey Insight</strong>
+            <em>Local</em>
+          </span>
+        </div>
+        <nav class="rail__nav" id="nav" aria-label="Điều hướng chính"></nav>
+        <div class="rail__foot" id="railFoot"></div>
+      </aside>
+
+      <div class="workarea">
+        <header class="topbar" id="topbar"></header>
+        <div id="filterSlot" class="filter-slot"></div>
+        <main id="view" class="view" tabindex="-1"></main>
+      </div>
+    </div>
+
+    <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+    <div id="modalRoot" class="modal-root" hidden></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
